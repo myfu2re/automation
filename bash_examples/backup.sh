@@ -1,12 +1,10 @@
 #!/bin/bash
 
-# Налаштування
 SOURCE_DIR="/path/to/source"
 BACKUP_DIR="/path/to/backup"
 DATE=$(date +%Y-%m-%d_%H-%M-%S)
 BACKUP_FILE="backup_$DATE.tar.gz"
 
-# Створення резервної копії
 echo "Creating a backup copy $SOURCE_DIR..."
 tar -czf "$BACKUP_DIR/$BACKUP_FILE" "$SOURCE_DIR"
 
